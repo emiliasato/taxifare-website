@@ -26,9 +26,13 @@ d = st.date_input(
     "When's your birthday")
 st.write('Your birthday is:', d)
 
-t = st.time_input('Set an alarm for', datetime.time(8, 45))
+t = st.time_input('Set an alarm for')
 
 st.write('Alarm is set for', t)
+
+st.write('Time and date is ', d+t)
+
+
 
 pickup_longitude = st.text_input('Pickup longitude', 'Life of Brian')
 
