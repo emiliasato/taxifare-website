@@ -20,7 +20,7 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 - dropoff latitude
 - passenger count
 '''
-date_and_time = st.text_input('Date and Time', 'Life of Brian')
+date_and_time = st.text_input('Date and Time')
 
 st.write('Date and time is ', date_and_time)
 
@@ -32,17 +32,17 @@ pickup_latitude = st.text_input('Pickup latitude', 'Life of Brian')
 
 st.write('Pickup longitude is ',pickup_latitude)
 
-dropoff_latitude = st.text_input('Date and Time', 'Life of Brian')
+dropoff_latitude = st.text_input('Dropoff Latitude', 'Life of Brian')
 
 st.write('Dropoff latitude is ',dropoff_latitude )
 
-dropoff_longitude = st.text_input('Date and Time', 'Life of Brian')
+dropoff_longitude = st.text_input('Dropoff Longitude', 'Life of Brian')
 
 st.write('Dropoff longitude is ',dropoff_longitude)
 
 passenger_count = st.text_input('Passenger Count', 'Life of Brian')
 
-st.write('Dropoff longitude is ',passenger_count)
+st.write('Passnenger Count is ',passenger_count)
 
 '''
 ## Once we have these, let's call our API in order to retrieve a prediction
