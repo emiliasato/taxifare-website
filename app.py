@@ -1,4 +1,5 @@
 import streamlit as st
+import datetime
 
 '''
 # TaxiFareModel front
@@ -23,6 +24,11 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 date_and_time = st.text_input('Date and Time')
 
 st.write('Date and time is ', date_and_time)
+
+d = st.date_input(
+    "When's your birthday",
+    datetime.date(2019, 7, 6))
+st.write('Your birthday is:', d)
 
 pickup_longitude = st.text_input('Pickup longitude', 'Life of Brian')
 
