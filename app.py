@@ -21,14 +21,14 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 - dropoff latitude
 - passenger count
 '''
-date_and_time = st.text_input('Date and Time')
-
-st.write('Date and time is ', date_and_time)
 
 d = st.date_input(
-    "When's your birthday"
-    )
+    "When's your birthday")
 st.write('Your birthday is:', d)
+
+t = st.time_input('Set an alarm for', datetime.time(8, 45))
+
+st.write('Alarm is set for', t)
 
 pickup_longitude = st.text_input('Pickup longitude', 'Life of Brian')
 
